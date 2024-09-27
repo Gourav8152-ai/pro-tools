@@ -16,29 +16,39 @@ export async function POST(req: NextRequest) {
       fullPrompt = `Rewrite the following sentence with proper grammar: ${prompt}`;
       break;
     case 'offer-maker':
-      fullPrompt = `Generate a captivating offer using the following guidelines strictly:
+      fullPrompt = `Generate a concise, direct offer for a property listing strictly using these guidelines:
+
+Input
+* The input may come in any format or structure
+* Extract key information such as:
+   * Property name
+   * Offer details (e.g., cashback amount, discounts)
+   * Booking or move-in dates
+   * Eligibility criteria (e.g., specific room types, tenancy length)
+   * Deadline for the offer
 
 Offer Title
-Create a witty and eye-catching title in no more than 72 characters:
-1. Use action words or puns to grab attention
-2. Highlight a key benefit or savings amount
-3. Avoid specific property names or room types
-4. Create a sense of urgency or exclusivity
+Create a catchy title in no more than 72 characters:
+1. Highlight the main benefit (e.g., cashback amount, discount percentage)
+2. Include a sense of urgency if applicable
+3. Use appropriate currency symbol (£, $, €, etc.) based on the offer
+4. Avoid mentioning the specific property name
 
 Offer Body
-Craft a compelling offer description in 3-4 sentences:
-1. Start with an engaging hook about the property or offer
-2. Include all provided details (e.g., rent amount, rebates, dates)
-3. Highlight unique selling points or amenities
-4. End with a strong call-to-action (CTA)
+Craft a clear offer description in 3-4 sentences:
+1. Start with the key offer details
+2. Specify any conditions or eligibility criteria
+3. Mention the property name and any standout features
+4. End with a straightforward call-to-action (CTA)
 
 Style:
-* Keep the tone witty, direct, and conversational
-* Use vivid language to paint a picture of the living experience
-* Balance professionalism with a touch of playfulness
+* Keep the tone direct and informative
+* Use clear, concise language
+* Avoid flowery or overly poetic phrases
+* Do not use "our/us/we" in the offer body
 
 Remember:
-* Each generated offer should be unique and tailored to the specific property
+* Tailor each offer to the specific property and deal
 * Emphasize the value proposition and any time-sensitive elements
 * Ensure the offer is clear and easy to understand at a glance
 
