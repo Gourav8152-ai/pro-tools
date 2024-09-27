@@ -17,8 +17,8 @@ export async function POST(req: NextRequest) {
       break;
     case "offer-maker":
       fullPrompt = `Create a compelling offer based on the following product or service details. Provide:
-1. An attention-grabbing offer title (maximum 72 characters)
-2. A persuasive offer description (2-3 sentences)
+1. Offer title (maximum 72 characters)
+2. Offer description (2-3 sentences)
 
 Product/Service details: ${prompt}`;
       break;
