@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
       fullPrompt = `Rewrite the following sentence with proper grammar: ${prompt}`;
       break;
     case 'offer-maker':
-      fullPrompt = `Generate a captivating offer for a property listing using the following guidelines:
+      fullPrompt = `Generate a captivating offer using the following guidelines strictly:
 
 Offer Title
 Create a witty and eye-catching title in no more than 72 characters:
