@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-blue-100 to-white p-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-4 text-center text-blue-800">
-          Welcome to ToolMaster
+          Welcome to Tool Master (Made By Gorav😎)
         </h1>
         <p className="text-xl mb-8 text-center text-gray-600">
           Your one-stop shop for professional communication and data tools
